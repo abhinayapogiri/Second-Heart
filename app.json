@@ -15,7 +15,7 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.maheshb.frontend",
+      "bundleIdentifier": "com.abhinayapogiri.frontend",
       "infoPlist": {
         "ITSAppUsesNonExemptEncryption": false,
         "NSAppTransportSecurity": {
@@ -28,7 +28,7 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#000000"
       },
-      "package": "com.maheshb.frontend"
+      "package": "com.abhinayapogiri.frontend"
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -51,9 +51,9 @@
     "extra": {
       "router": {},
       "eas": {
-        "projectId": "9de5074b-b3a4-4979-a8c3-1fe448634721"
+        "projectId": "ba5799d1-76a2-4e2c-82fe-8a376b2fecb3"
       }
     },
-    "owner": "mahesh-b"
+    "owner": "abhinayapogiri"
   }
 }
