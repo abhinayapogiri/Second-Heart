@@ -48,8 +48,8 @@ jobs:
 
       - run:
           name: Build Preview (Android)
-          command: eas build --profile preview --platform android --non-interactive --no-wait
-         
+          command: eas build --profile preview --platform android --non-interactive
+          no_output_timeout: 60m
 
      
 workflows:
