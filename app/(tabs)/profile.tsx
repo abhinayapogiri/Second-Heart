@@ -196,7 +196,16 @@ export default function ProfileScreen() {
                 setEditModalVisible(false);
                 Alert.alert("Success", "Profile updated!");
             } else {
-                Alert.alert("Error", "Failed to update profile");
+                let errorMessage = "Failed to update profile";
+                try {
+                    const errorData = await response.json();
+                    if (errorData.detail) {
+                        errorMessage = typeof errorData.detail === 'string' ? errorData.detail : JSON.stringify(errorData.detail);
+                    }
+                } catch (e) {
+                    console.error("Could not parse error response", e);
+                }
+                Alert.alert("Error", errorMessage);
             }
         } catch (error) {
             console.error("Failed to update profile", error);
